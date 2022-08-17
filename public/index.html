@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      #signedInView {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Taskr</h1>
+
+    <section data-v-signed-out>
+      <h2>Logged out</h2>
+
+      <button data-c-sign-in>Sign in</button>
+    </section>
+
+    <section data-v-signed-in id="signedInView">
+      <h2>Logged in</h2>
+
+      <div data-v-user-details></div>
+
+      <ul data-v-things></ul>
+
+      <button data-c-create-thing>Create a thing</button>
+
+      <button data-c-sign-out>Sign out</button>
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
